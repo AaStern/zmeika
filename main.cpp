@@ -50,16 +50,16 @@ void addPoint() {
     Move m = snake.back().m;
     switch (m) {
         case UP:
-            snake.push_back(Point(x, y + 2, m));
+            snake.push_back(Point(x, y + 1, m));
             break;
         case DOWN:
-            snake.push_back(Point(x, y - 2, m));
+            snake.push_back(Point(x, y - 1, m));
             break;
         case LEFT:
-            snake.push_back(Point(x + 2, y, m));
+            snake.push_back(Point(x + 1, y, m));
             break;
         case RIGHT:
-            snake.push_back(Point(x - 2, y, m));
+            snake.push_back(Point(x - 1, y, m));
             break;
     }
 }
